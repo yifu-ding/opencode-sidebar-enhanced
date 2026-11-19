@@ -1,0 +1,14 @@
+{
+  "name": "opencode-sidebar-enhanced",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An enhanced OpenCode V2 sidebar with project sessions, task statuses, a kanban board, usage and a context meter",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/yifu-ding/opencode-sidebar-enhanced.git" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test installer.test.mjs",
+    "test:plugins": "node --test --experimental-strip-types plugins/opencode-project-sessions/*.test.ts plugins/opencode-quota/src/*.test.ts"
+  }
+}
