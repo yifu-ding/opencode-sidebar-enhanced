@@ -6,13 +6,39 @@ A theme-aware sidebar and session-management toolkit for **OpenCode V2**.
 Browse projects and sessions, assign task statuses, organize work on a kanban board,
 archive in batches, and keep usage and context information in view.
 
-## Screenshot
+## Screenshots
 
-One screenshot will be added here. The screenshot slot is reserved; no generated image is used.
+<img src="assets/screenshot.png" width="800" alt="Sidebar overview">
 
-<!-- Once the user-provided screenshot is added, replace the sentence above with:
-![OpenCode Sidebar Enhanced](docs/images/screenshot.png)
--->
+> The full suite in the OpenCode TUI: Tabs, Projects, Todo, and Usage cards on the right sidebar.
+
+<img src="assets/sidebar-control-commands.png" width="600" alt="Sidebar control commands">
+
+> `/sidebar-*` commands show/hide each card and switch Projects sorting.
+
+<img src="assets/status.png" width="500" alt="Status picker">
+
+> `/session-status` assigns one of six task statuses to the current session.
+
+<img src="assets/board-status.png" width="800" alt="Board in Status mode">
+
+> `/board` in **Status mode:** a kanban of sessions across status columns, with drag-and-drop.
+
+<img src="assets/board-projects.png" width="800" alt="Board in Project mode">
+
+> `/board` in **Project mode**: the same sessions grouped by project.
+
+<img src="assets/filters.png" width="500" alt="Projects filters">
+
+> `/sidebar-projects-filter`: calendar date filter and multi-select statuses, shared by Projects and Board.
+
+<img src="assets/archive.png" width="500" alt="Archive dialog">
+
+> `/archive`: search, check multiple projects/sessions, and confirm in one batch — nothing is deleted.
+
+<img src="assets/usage.png" width="800" alt="Usage breakdown">
+
+> `/quota`: full-screen cost estimates by provider and model, with token and cache-hit details.
 
 ## Features
 
@@ -149,9 +175,7 @@ npm test            # Installer unit/integration tests; build first
 npm run test:plugins # Plugin unit tests; Node.js 22.6+ required
 ```
 
-No dependency installation is required for building or these tests. Runtime peer dependencies
-are supplied by OpenCode. `dist/` is generated and is not committed.
-The single screenshot will live at `docs/images/screenshot.png`; see [the image note](docs/images/README.md).
+No dependency installation is required for building or these tests. Runtime peer dependencies are supplied by OpenCode. 
 
 ## License and credits
 
